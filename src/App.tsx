@@ -114,7 +114,7 @@ function Home() {
           <h1>Bùi Hà Anh</h1>
           <h2>sinh viên <em>Ngôn ngữ &amp; Văn hóa Hàn Quốc.</em></h2>
           <p className="hero-description">
-            Mình là sinh viên Trường Đại học Ngoại ngữ – ĐHQGHN. Portfolio này ghi lại sáu sản phẩm thực hành của học phần Nhập môn Công nghệ số và Ứng dụng trí tuệ nhân tạo, từ quản lý dữ liệu đến sử dụng AI có trách nhiệm.
+            Mình là sinh viên Trường Đại học Ngoại ngữ – ĐHQGHN, yêu thích đọc sách và nghe nhạc. Portfolio này ghi lại sáu sản phẩm thực hành của học phần Nhập môn Công nghệ số và Ứng dụng trí tuệ nhân tạo, từ quản lý dữ liệu đến sử dụng AI có trách nhiệm.
           </p>
           <div className="identity-chips">
             <span>MSSV 25042320</span>
@@ -142,16 +142,39 @@ function Home() {
         </div>
       </section>
 
-      <section className="featured reveal">
-        <div className="featured-heading">
-          <span className="index">01</span>
-          <div><small>FEATURED JOURNEY</small><h3>Sáu dấu mốc, một hành trình trưởng thành số.</h3></div>
+      <section className="about-section reveal" aria-labelledby="about-title">
+        <div className="about-heading">
+          <span className="kicker"><Sparkles size={14} /> About me</span>
+          <h2 id="about-title">Học tập có mục tiêu,<br />phát triển có định hướng.</h2>
         </div>
-        <button className="featured-preview" onClick={() => go('projects')}>
-          <img src="./report-pages/bai-3/page-1.png" alt="Trang đầu bài tập viết prompt" />
-          <span className="preview-caption"><strong>Viết prompt hiệu quả</strong><small>Xem toàn bộ 6 bài tập</small></span>
-          <span className="round-arrow"><ArrowRight /></span>
-        </button>
+        <div className="about-grid">
+          <article><span>01 · Sở thích</span><h3>Nuôi dưỡng cảm hứng</h3><p>Đọc sách giúp mình mở rộng tri thức và rèn sự tập trung; nghe nhạc giúp mình thư giãn, cân bằng và tìm lại cảm hứng sau những ngày dài.</p></article>
+          <article><span>02 · Mục tiêu học tập</span><h3>Làm chủ công cụ số</h3><p>Mình muốn nắm vững kiến thức, biết sử dụng AI đúng lúc, hợp lý và tối ưu để các bài tập, dự án sau này ngày càng chỉn chu hơn.</p></article>
+          <article><span>03 · Định hướng</span><h3>Tiến tới TOPIK 6</h3><p>Mình tiếp tục trau dồi kỹ năng kết hợp AI với việc học, tối ưu thời gian và phát triển năng lực giao tiếp tiếng Hàn một cách nhuần nhuyễn.</p></article>
+          <article><span>04 · Mục tiêu Portfolio</span><h3>Lưu giữ để tiến bộ</h3><p>Đây là nơi hệ thống hóa kiến thức, lưu trữ sản phẩm và giúp mình nhìn lại những kỹ năng đã tích lũy sau học phần.</p></article>
+        </div>
+      </section>
+
+      <section className="journey-section reveal" aria-labelledby="journey-title">
+        <div className="journey-heading"><span className="kicker">Featured journey</span><h2 id="journey-title">Ba chặng, một câu chuyện trọn vẹn.</h2></div>
+        <div className="journey-grid">
+          <button className="journey-card journey-projects" onClick={() => go('projects')}>
+            <span className="journey-index">01</span>
+            <img src="./report-pages/bai-3/page-1.png" alt="Trang đầu bài tập viết prompt" />
+            <span className="journey-copy"><small>LEARNING PROJECTS</small><strong>Sáu bài tập</strong><em>Xem nội dung và tài liệu đầy đủ</em></span>
+            <span className="round-arrow"><ArrowRight /></span>
+          </button>
+          <button className="journey-card journey-summary" onClick={() => go('summary')}>
+            <span className="journey-index">02</span><span className="journey-icon"><Stars /></span>
+            <span className="journey-copy"><small>REFLECTION &amp; GROWTH</small><strong>Tổng kết hành trình</strong><em>Kỹ năng, thử thách và điều mình tâm đắc</em></span>
+            <span className="round-arrow"><ArrowRight /></span>
+          </button>
+          <button className="journey-card journey-thanks" onClick={() => go('thanks')}>
+            <span className="journey-index">03</span><span className="journey-icon"><Heart /></span>
+            <span className="journey-copy"><small>THE FINAL NOTE</small><strong>Lời cảm ơn</strong><em>Khép lại Portfolio bằng sự trân trọng</em></span>
+            <span className="round-arrow"><ArrowRight /></span>
+          </button>
+        </div>
       </section>
     </div>
   )
@@ -302,13 +325,21 @@ function Summary() {
           <span className="kicker">Lời kết hành trình</span>
           <blockquote>“Công nghệ có ý nghĩa khi giúp mình học sâu hơn, làm việc rõ ràng hơn và hành động có trách nhiệm hơn.”</blockquote>
           <p>
-            Ban đầu, việc chọn lọc nguồn, phối hợp nhiều công cụ và kiểm tra đầu ra AI khiến mình mất khá nhiều thời gian. Qua từng bài tập, mình dần biết chia nhỏ nhiệm vụ, đặt câu hỏi chính xác và tự đánh giá chất lượng sản phẩm thay vì chỉ chờ một đáp án có sẵn.
+            Sau khi kết thúc học phần, mình cảm thấy biết ơn vì đã được tích lũy thêm nhiều tri thức và kỹ năng mới — những nền tảng cần thiết cho hành trình học tập, rèn luyện và thích ứng trong môi trường số.
           </p>
           <p>
-            Điều mình tâm đắc nhất là công nghệ không thay thế quá trình học. Nó mở rộng khả năng của người học khi được sử dụng minh bạch, có kiểm chứng và đi cùng trách nhiệm cá nhân.
+            Ban đầu, việc chọn lọc nguồn, phối hợp nhiều công cụ, kiểm tra đầu ra AI và chuyển kiến thức thành trải nghiệm cá nhân trong từng báo cáo khiến mình mất khá nhiều thời gian. Qua từng bài tập, mình dần biết chia nhỏ nhiệm vụ, đặt câu hỏi chính xác và tự đánh giá chất lượng sản phẩm.
+          </p>
+          <p>
+            Điều mình tâm đắc nhất là nhận ra những sai lầm trong cách sử dụng AI để rút kinh nghiệm sâu sắc hơn. Công nghệ không thay thế quá trình học; nó mở rộng khả năng của người học khi được sử dụng thông minh, minh bạch và có trách nhiệm.
           </p>
           <div className="reflection-sign"><span>Bùi Hà Anh</span><small>ULIS · 2026</small></div>
         </article>
+      </section>
+      <section className="growth-notes reveal" aria-label="Tổng kết chi tiết">
+        <article><span>01</span><h2>Nhìn lại hành trình</h2><p>Sáu sản phẩm cho mình cơ hội thực hành liên tục, từ tổ chức dữ liệu, tìm kiếm học thuật đến sáng tạo và sử dụng AI có trách nhiệm.</p></article>
+        <article><span>02</span><h2>Chuyển biến rõ nhất</h2><p>Mình không còn chỉ chờ một đáp án có sẵn mà biết xác định mục tiêu, chia nhỏ nhiệm vụ, kiểm chứng thông tin và biên tập đầu ra theo yêu cầu.</p></article>
+        <article><span>03</span><h2>Điều sẽ tiếp tục</h2><p>Mình sẽ vận dụng những kỹ năng này vào các môn học khác, đồng thời tiếp tục học tiếng Hàn và hướng tới mục tiêu TOPIK 6.</p></article>
       </section>
       <div className="summary-cta reveal">
         <div><span>Chặng cuối</span><h2>Một lời cảm ơn chân thành.</h2></div>
