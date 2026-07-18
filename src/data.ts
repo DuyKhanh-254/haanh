@@ -37,7 +37,7 @@ export const assignments: Assignment[] = [
     process: ['Viết prompt ban đầu cho từng tác vụ.', 'Bổ sung vai trò, ngữ cảnh, cấu trúc và giới hạn.', 'So sánh đầu ra, chỉ ra điểm mạnh và phần cần chỉnh sửa.'],
     lesson: 'Prompt tốt không chỉ là câu lệnh dài. Điều quan trọng là mục tiêu rõ, bối cảnh đủ và tiêu chí đầu ra có thể kiểm tra được.',
     skills: ['Prompt engineering', 'Phân tích đầu ra', 'Học tập với AI'],
-    pageCount: 11,
+    pageCount: 10,
     color: '#f6dce7',
   },
   {
